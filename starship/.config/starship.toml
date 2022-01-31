@@ -1,0 +1,27 @@
+# Don't print a new line at the start of the prompt
+add_newline = false
+
+# Moves the time to the right of the current line
+right_format = """$time"""
+
+# Enabling modules with their defaults
+[character]                            
+success_symbol = "[➜](bold green)"     
+error_symbol = "[➜](bold red) "
+
+[status]
+disabled = false
+symbol = "✖ "
+
+[sudo]
+disabled = false
+
+[time]
+disabled = false
+
+[username]
+show_always = true
+disabled = false
+
+[battery]
+disabled = true
