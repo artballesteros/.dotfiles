@@ -11,6 +11,7 @@ set smartindent                 " automatically indents next line
 set textwidth=80                " 80 characters per line limit
 set incsearch                   " search as characters are entered
 set hlsearch                    " highlight matches
+set noshowmode                  " mode information is already on lightline.vim
 
 " Install vim-plug if not installed
 if empty(glob('~/.config/nvim/autoload/plug.vim'))
@@ -21,5 +22,12 @@ endif
 
 call plug#begin()
 	Plug 'itchyny/lightline.vim' " lighter powerline alternative
+    Plug 'catppuccin/nvim', {'as': 'catppuccin'}
 
 call plug#end()
+
+" aesthetics : best to keep this after vim-plug declarations
+colorscheme catppuccin          " Soothing pastel theme for NeoVim
+
+" lightline colorscheme
+let g:lightline = {'colorscheme': 'catppuccin'}
