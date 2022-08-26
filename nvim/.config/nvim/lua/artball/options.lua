@@ -32,6 +32,7 @@ local options = {
     scrolloff      = 8,                           -- mininum number of lines below and above current line
     sidescrolloff  = 8,                           -- mininum number of columns left and right of current column; wrap must be false
     guifont        = "monospace:h17",             -- the font used in graphical neovim applications
+    termguicolors = true,
 }
 
 for option, value in pairs(options) do 
