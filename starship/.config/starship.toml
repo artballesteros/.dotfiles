@@ -6,25 +6,23 @@ right_format = """$time"""
 
 # Enabling modules with their defaults
 [character]                            
-# success_symbol = "[➜](bold green)"     
-# error_symbol = "[➜](bold red) "
-
 success_symbol = "[==>](bold green)"     
 error_symbol = "[==>](bold red) "
+
+[username]
+format = "  [$user]($style) in "
+show_always = true
+disabled = false
 
 [status]
 disabled = false
 symbol = "✖ "
 
-[sudo]
-disabled = false
-
 [time]
-disabled = false
-
-[username]
-show_always = true
 disabled = false
 
 [battery]
 disabled = true
+
+[memory_usage]
+disabled = false
