@@ -1,6 +1,7 @@
 local servers = {
 	"sumneko_lua",
 	"jsonls",
+    "clangd",
 }
 
 local settings = {
