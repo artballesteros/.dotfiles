@@ -112,6 +112,7 @@ cmp.setup {
   sources = {
     -- order determines precedence of source
     -- you can get more sources from nvim-cmp documentation
+    { name = "nvim_lsp"},
     { name = "luasnip" },
     { name = "buffer" },
     { name = "path" },
